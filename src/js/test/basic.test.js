@@ -13,7 +13,7 @@ describe.each([
   ['Zombie', Zombie, 40, 10],
   ['Daemon', Daemon, 10, 40],
 ])(
-  'should create class %s',
+  'следует создать класс',
   (className, Class, attack, deffence) => {
     test('выдает ошибку при передаче пустого значения', () => {
       const error = () => new Class();
@@ -34,7 +34,7 @@ describe.each([
       );
     });
 
-    test('should have correct properties', () => {
+    test('должен обладать правильными свойствами', () => {
       const player = new Class('player');
 
       expect(player).toEqual({

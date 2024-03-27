@@ -4,8 +4,8 @@ export default class Character {
       this.type = this.constructor.name;
       this.health = 100;
       this.level = 1;
-      this.attack = 0;
-      this.deffence = 0;
+      this.attack = undefined;
+      this.deffence = undefined;
     }
   
     setName(name) {
